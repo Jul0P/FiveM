@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventaire</title>
+    <link rel="stylesheet" type="text/css" href="css/ui.css">
+</head>
+
+<body>
+
+    <script src="js/config.js"></script>
+    <script src="locales/en.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/inventory.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display?styles=98770" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <script>
+        $(function() {
+            $("#dialog").dialog({
+                autoOpen: false,
+                clickOutside: true
+            });
+        });
+    </script>
+
+    <div class="ui">
+        <div class="inventory">
+            <div id="weight" class="text-xs self-end"></div>
+            <div id="playerInventory">
+            </div>
+            <div id="playerInventoryFastItems">
+            </div>
+            <div class="controls-div">
+                <input type="number" class="control" id="count" value="1">
+                <div class="control2" id="give">
+                    <i class="fas fa-exchange"></i>
+                </div>
+                <div class="control3" id="drop">
+                    <i class="fas fa-trash"></i>
+                </div>
+            </div>
+            <div id="controlstrunk">
+                <div class="autourname">Autour</div>
+                <div class="weighttrunk-div"></div>
+                <div class="controlstrunk-div">
+                    <div id="controlrename">
+                    </div>
+                </div class="controltodown">
+                
+            </div>
+
+            
+            <div id="otherInventory">
+                <div id="noSecondInventoryMessage">
+                </div>
+            </div>
+            <div style="width: 100%;bottom: 0;top: auto;">
+                <span align="left" class="info-div2" style="float: left;"></span>
+                <span align="right" class="info-div" style="float: right;"></span>
+            </div>
+
+        </div>
+        <div class="raccourci2">   
+            <div class="raccours10">Sac à dos</div>
+        </div>
+    </div>
+</div>
+    <div class="cloth-inv">
+        <div class="cloth-items">
+            <div id="mask" class="item-box">
+                <i class="fa-solid fa-masks-theater"></i>
+            </div>
+            <div id="glasses" class="item-box">
+                <i class="fa-solid fa-glasses"></i>
+            </div>
+            <div id="shirt" class="item-box">
+                <i class="fa-solid fa-shirt"></i>
+            </div>
+            <div id="vest" class="item-box">
+                <i class="fa-solid fa-vest"></i>
+            </div>
+        </div>
+    </div>
+    <div class="cloth-inv">
+        <div class="cloth-items2">
+            <div id="pants" class="item-box2">
+                <i class="fa-solid fa-socks"></i>
+            </div>
+            <div id="shoes" class="item-box2">
+                <i class="fa-solid fa-shoe-prints"></i>
+            </div>
+            <div id="hat" class="item-box2">
+                <i class="fa-solid fa-hat-cowboy-side"></i>
+            </div>
+            <div id="bag" class="item-box2">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+        </div>
+    </div>
+    <div class="cloth-inv2">
+        <div class="buttoniconvtm">
+            <div class="raccours2">
+                <i class="material-symbols-outlined">checkroom</i>
+        </div>
+    </div>
+    <div class="cloth-inv">
+        <div class="buttoniconbag">
+            <div class="raccours1">
+                <i class="material-symbols-outlined">backpack</i>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
