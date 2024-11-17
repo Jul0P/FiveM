@@ -1,0 +1,60 @@
+body {
+    margin-top: 770px;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+.toast {
+    width: 87.28%;
+    float: right;
+}
+
+.wrapper {
+    width: 100px;
+    height: auto;
+    background-color: #1e1e1e;
+    float: right;
+}
+
+.main {
+    margin: 0px 0px 0px 0px;
+    position: relative;
+}
+
+.main::before {
+    font-size: 24px;
+    top: calc(50% - 12px);
+    left: -40px;
+    line-height: 24px;
+    position: absolute;
+}
+
+.notif {
+    background-color: rgba(20, 20, 20, 0.85);
+    color: #fff;
+    padding: 5px 5px 5px 5px;
+}
+
+.notif-border {
+    border-left: 3px solid #2f83ff;
+}
+
+.notif2 {
+    background-color: rgba(20, 20, 20, 0.85);
+    color: #fff;
+    padding: 5px 5px 5px 5px;
+}
+
+.notif2-border {
+    border-left: 3px solid #dc3545;
+}
+
+.notif3 {
+    background-color: rgba(20, 20, 20, 0.85);
+    color: #fff;
+    padding: 5px 5px 5px 5px;
+}
+
+.notif3-border {
+    border-left: 3px solid #47cf73;
+}
